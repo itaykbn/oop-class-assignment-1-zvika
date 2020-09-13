@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from help_tools import HelpTools
 
 
 class Shape(ABC):
@@ -13,7 +14,8 @@ class Shape(ABC):
         if color in color_list:
             self._color = color
         else:
-            raise ValueError("color not legal")
+            HelpTools.add_to_log(40, "illegal color - not in list")
+            raise ValueError("illegal color - not in list")
 
     @abstractmethod
     def area(self):
