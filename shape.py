@@ -24,4 +24,4 @@ class Shape(ABC):
         pass
 
     def get_type(self):
-        print(type(self).__name__)
+        return type(self).__name__
