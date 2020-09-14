@@ -1,5 +1,7 @@
 from shape_container import ShapeContainer
 from help_tools import HelpTools
+from shape import Shape
+import random
 from rectangle import Rectangle
 
 
@@ -16,6 +18,12 @@ def main():
     print("the list is \n " + str(my_container.sort_shapes_by_area()))
 
 
-# need to add the solution to the end of the first part(don't understand what do i need to do)
+def sum_square_rectangle(shape_1, shape_2) -> (Shape, Shape):
+    sum_shape = shape_1.area() + shape_2.area()
+    side_a = random.randint(1, 10)
+    side_b = sum_shape / side_a
+    return Rectangle(side_a, side_b)
+
+
 if __name__ == '__main__':
     main()

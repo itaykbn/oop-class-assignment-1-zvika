@@ -61,5 +61,3 @@ class ShapeContainer:
         for shape in sorted_list:
             new_list.append(shape.area())
         return new_list
-
-
