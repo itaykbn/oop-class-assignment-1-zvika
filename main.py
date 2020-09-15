@@ -15,7 +15,7 @@ def main():
     print("")
     print("")
 
-    print("the list is \n " + str(my_container.sort_shapes_by_area()))
+    print("sorted shapes by area: \n " + str(my_container.sort_shapes_by_area()))
 
 
 def sum_square_rectangle(shape_1, shape_2) -> (Shape, Shape):

@@ -57,7 +57,8 @@ class ShapeContainer:
 
     def sort_shapes_by_area(self):
         sorted_list = sorted(self._shapes_list, key=lambda _shape: _shape.area(), reverse=True)
-        new_list = []
-        for shape in sorted_list:
-            new_list.append(shape.area())
-        return new_list
+        dictionary = dict()
+        for i in range(len(sorted_list)):
+            dictionary[sorted_list[i]] = sorted_list[i].area()
+
+        return dictionary
